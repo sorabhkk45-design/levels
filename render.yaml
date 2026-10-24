@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: levels
+    runtime: python
+    plan: free
+    buildCommand: echo ok
+    startCommand: python app.py
+    envVars:
+      - key: GOOGLE_API_KEY
+        sync: false
+      - key: APP_PIN
+        sync: false
